@@ -25,9 +25,13 @@
 
 // let a = new Number(10); // kieu object se cung cap vung nho khac nhau
 // let b = new Number(10);
-// console.log(a === b); // vi vung nho khac nhau nen ket qua la false
+
+// // console.log(a === b); // vi vung nho khac nhau nen ket qua la false
+// console.log(a.valueOf()==b.valueOf());
 
 // console.log(Number.MAX_VALUE); // method voi Number
+
+// console.log(13.3.toFixed(1))
 
 //undefine xuat hien khi khong khai bao
 
