@@ -4,9 +4,8 @@
 // - Các ký tự ! # $ % & ' * + - / = ? ^ _ ` { | } ~
 // - Ký tự . (dấu chấm) miễn là nó không phải là ký tự đầu tiên hoặc ký tự cuối cùng và nó sẽ không xuất hiện liên tiếp."
 
-let testData = "nAited#tates8A";
-// let regex = /(?=[^A-Z]*[A-Z])(?=[^!@#\$%]*[!@#\$%])/g;
-
-let regex = /(?=[^A-Z]*[A-Z])(?=[0-9])(?=[!@#\$%])/g;
+let testData = "AhmLKcAo-2m@gmail.com";
+// let regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!#\$%&'*+\/=?^_`{|}~])[a-zA-Z0-9-!.#\$%&'*+\/=?^_`{|}~]+@[a-zA-Z]{3,}\.[a-zA-Z]{2,}$/mg;
+let regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[-!#$%&'*+/=?^_`{|}~])[a-zA-Z0-9-!.#$%&'*+/=?^_`{|}~]+@[a-zA-Z]{3,}\.[a-zA-Z]{2,}$/mg;
 let result = regex.test(testData);
 console.log(result);
