@@ -40,6 +40,9 @@
 // arr[arr.length] = "HI";
 // console.log(arr);
 
+// let arr = ["A", "B" ,"C"];
+// console.log(arr);
+
 // arr.push("XXX"); // push them phan tu vao cuoi
 // console.log(arr);
 
@@ -53,10 +56,10 @@
 // console.log(arr);
 
 // const arr = ["A", "B", "C"];
-// // arr.splice(1, 0, "D", "F"); // chen vao vi tri 1
+// arr.splice(1, 0, "D", "F"); // chen vao vi tri 1
 // console.log(arr);
 
-// arr.splice(1, 2, "D", "F"); // chen vao vi tri index 1, 2: xoa 2 phan tu bat dau tu index = 1
+// arr.splice(1, 2, "G", "H"); // chen vao vi tri index 1, 2: xoa 2 phan tu bat dau tu index = 1
 // console.log(arr);
 
 // arr.splice(1, 2); // 2: xoa 2 phan tu bat dau tu index = 1
@@ -64,6 +67,7 @@
 
 // const arr = ["A", "B", "C", "D", "E", "F"];
 // console.log(arr.slice(2, 5)); // lay ra tu index 2->5 (nhung k bao gom 5)
+// console.log(arr.slice(0, 2)); 
 // console.log(arr);
 
 // const arr = ["A", "B", "C", "D", "E", "F"];
@@ -92,19 +96,19 @@
 
 // review lai phan nay
 // const students = [{
-//         studentName: "Tan",
+//         studentName: "A",
 //         age: 10
 //     },
 //     {
-//         studentName: "Minh",
+//         studentName: "B",
 //         age: 9
 //     },
 //     {
-//         studentName: "Chi Ha",
+//         studentName: "D",
 //         age: 30
 //     },
 //     {
-//         studentName: "Son",
+//         studentName: "C",
 //         age: 15
 //     }
 // ];
@@ -114,8 +118,12 @@
 //     })) // sap xep theo tuoi
 
 // console.log(students.sort(function(a, b) {
-//         return a.studentName - b.studentName;
+//         return a.studentName-b.studentName;
 //     })) // sap xep theo ten
+
+// console.log(students.sort(function(a, b) {
+//         return a.studentName.localeCompare(b.studentName);
+//     })) // sắp xếp theo tên (nên sử dụng localeCompare)
 
 // search = ISO datetime format
 // console.log(new Date()); // ngay gio hien tai
@@ -172,7 +180,7 @@
 // }
 // console.log(doSomething(3));
 
-//review lai cho nay
+// review lai cho nay => clear
 // const dodo = (a) => {
 //     return a * a;
 // }
@@ -191,7 +199,7 @@
 // adds(1, 0, 6, 8, 9);
 
 //lưu ý nếu hàm k có param thì khi gọi hàm truyền đối số vô thì vẫn gọi đc bằng arguments
-function dodo() {
-    console.log(arguments);
-}
-dodo(1, 3, 5, 7, 9);
+// function dodo() {
+//     console.log(arguments);
+// }
+// dodo(1, 3, 5, 7, 9);

@@ -30,5 +30,19 @@ function stringeeFunc() {
 }
 
 stringeeFunc(1, 2);
+2. Các hàm kết hợp array
+- length(): kiểm tra tổng số number của arr
+- pop(): lấy phần tử cuối ra và xóa nó
+- unshift(): thêm 1 phần tử vô đầu tiên mảng
+- shift(): xóa phần tử đầu của mảng
+- splice(): thêm phần tử vào index và xóa bao nhiêu phần tử
+- push(): push them phan tu vao cuoi
+- slice(): vd: slice(0, 2, "A"): thêm "A" vào index 0, lấy ra phần tử từ index 0 đến idex 2 (k bao gồm index 2)
+- join(): nối chuỗi
+- reverse(): hàm đảo ngược 
+- sort(): sắp xếp. + Nếu mảng là kiểu number thì sẽ biến thành string sau đó sắp xếp nhỏ đến lớn
+                   + Nếu mảng là string thì sắp xếp a-z. Nếu muốn sắp xếp z-a thì dùng thêm hàm .reverse()
+- function có 3 cách viết function bth, function khi khai báo biến, function khai báo biến kiểu lambda
+
 
 
