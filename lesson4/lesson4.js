@@ -108,9 +108,9 @@
 //     ];
 //     if (months[mo]) {
 //         return months[mo];
-//     } else {
-//         throw new Error("Invalid");
-//     }
+    // } else {
+    //     throw new Error("Invalid");
+    // }
 // }
 
 // try {
